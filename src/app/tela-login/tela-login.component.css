@@ -1,0 +1,14 @@
+.logo {
+  color: #e50914;
+  font-weight: bolder;
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.container {
+  width: 470px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}

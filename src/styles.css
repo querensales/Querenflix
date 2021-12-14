@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 10%;
+  background: #181818;
+}
+
+input,
+button {
+  height: 65px;
+  font-size: 1.2rem;
+  padding: 0 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+input {
+  background: #2e2e2e;
+  border: none;
+  margin-bottom: 3%;
+  outline: none;
+  color: white;
+}
+
+
+.botao-login {
+  background: #181818;
+  border: 1px solid #4d4d4d;
+  color: #aaa;
+  margin: 20px 0;
+}
+
+a {
+  font-family: 'roboto', sans-serif;
+  margin: 20px auto;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e50914;
+}
+
+.botao-login:hover {
+  background: #e50914;
+  color: white;
+}
