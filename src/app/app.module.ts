@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TelaLoginComponent } from './tela-login/tela-login.component';
 import { TelaCatalogoComponent } from './tela-catalogo/tela-catalogo.component';
+import { MenuNavegacaoComponent } from './menu/menu-navegacao/menu-navegacao.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TelaLoginComponent,
-    TelaCatalogoComponent
+    TelaCatalogoComponent,
+    MenuNavegacaoComponent
   ],
   imports: [
     BrowserModule,
