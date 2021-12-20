@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { TelaLoginComponent } from './tela-login/tela-login.component';
 import { TelaCatalogoComponent } from './tela-catalogo/tela-catalogo.component';
 import { MenuNavegacaoComponent } from './menu/menu-navegacao/menu-navegacao.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { MenuNavegacaoComponent } from './menu/menu-navegacao/menu-navegacao.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
