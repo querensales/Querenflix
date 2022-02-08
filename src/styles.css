@@ -1,3 +1,7 @@
+@import '~primeicons/primeicons.css';
+@import '../node_modules/primeng/resources/themes/bootstrap4-dark-purple/theme.css';
+@import '~primeng/resources/primeng.min.css';
+
 * {
   margin: 0;
   padding: 0;

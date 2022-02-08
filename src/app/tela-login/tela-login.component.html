@@ -4,8 +4,8 @@
     </div>
 
     <div class="container">
-      <input [(ngModel)]="login" type="email" placeholder="Email" />
-      <input [(ngModel)]="senha" type="password" placeholder="Password" />
+      <input [(ngModel)]="usuario.login" type="email" placeholder="Email" />
+      <input [(ngModel)]="usuario.senha" type="password" placeholder="Password" />
 
       <button class="botao-login" (click)="logar()">Sign In</button>
 
@@ -13,45 +13,15 @@
     </div>
   </div>
 
-  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
-    tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
+  <p-dialog header="Header" [(visible)]="exibirMensagem" [modal]="true" [style]="{width: '50vw'}" [draggable]="false"
+    [resizable]="true">
+    <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <ng-template pTemplate="footer">
 
-        <div class="modal-body">
-          Show a second modal and hide this one with the button below.
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second
-            modal</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  <button class="btn btn-danger" (click)="triggerModal(modalData)">Open Modal</button>
-
-  <ng-template #modalData let-modal>
-    <div class="modal-header">
-      <h4 class="modal-title" id="modal-basic-title">Angular Bootstrap Modal Popup</h4>
-      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-        <span aria-hidden="true">×</span>
-      </button>
-    </div>
-    <div class="modal-body">
-      <p><strong>Are you sure you want to delete <span class="text-primary">"Agatha Harkness"</span> profile?</strong>
-      </p>
-
-      <p>All data related to west view profile will be removed permanently.
-      </p>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-danger" (click)="modal.close('Save click')">Close</button>
-    </div>
-  </ng-template>
+      <p-button icon="pi pi-check" (click)="exibirMensagem=false" label="Ok" styleClass="p-button-text"></p-button>
+    </ng-template>
+  </p-dialog>

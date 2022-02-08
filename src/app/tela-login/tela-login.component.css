@@ -13,3 +13,13 @@
   margin: auto;
   margin-top: 8%;
 }
+
+input {
+  margin-bottom: 0.25rem;
+}
+
+.botao-login {
+  border-radius: 5px;
+  border: none;
+
+}
