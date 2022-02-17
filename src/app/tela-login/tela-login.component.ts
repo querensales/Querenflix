@@ -30,6 +30,7 @@ export class TelaLoginComponent implements OnInit {
     if (this.usuario.login == 'querenhsales@gmail.com' &&
       this.usuario.senha == 'Queren001*') {
       localStorage.setItem('nome-usuario', this.usuario.login);
+      window.location.href = '/catalogo';
     } else {
       this.exibirMensagem = true;
     }
