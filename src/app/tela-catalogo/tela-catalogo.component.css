@@ -90,3 +90,9 @@ input[type="radio"] {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0 .37);
   transform: translate3d(-30%, 0, -200px);
 }
+
+/* FILMES */
+.card-img-top {
+  height: 300px;
+  width: 100%;
+}
