@@ -95,4 +95,5 @@ input[type="radio"] {
 .card-img-top {
   height: 300px;
   width: 100%;
+  display: flex;
 }
